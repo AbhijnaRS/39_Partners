@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Human Anatomy Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🫀 Vita3D</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Explore the Wonders of the Human Body</h1>
+    <p>Interactive knowledge of anatomy brought to life with stunning visuals.</p>
+    <a href="#features" class="cta">Learn More</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      The human body is an incredible machine. This site helps visualize anatomy 
+      with dynamic backgrounds inspired by the bloodstream and cells.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <a href="http://localhost:5175/" target="_blank"
+   style="background: rgba(255,255,255,0.08);
+          padding: 20px;
+          border-radius: 10px;
+          color: #fff;
+          text-decoration: none;
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          display: inline-block;">
+   🔗 Click Here For Live Demo
+</a>
+
+      <div class="feature">🧠 Neural Network Inspired Design</div>
+      <div class="feature">🫀 Bloodstream Animation</div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="handleContact(event)">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Anatomy Explorer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
